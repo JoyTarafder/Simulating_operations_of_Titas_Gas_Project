@@ -72,5 +72,6 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Label>
+      <Button fx:id="showbutton" layoutX="479.0" layoutY="367.0" mnemonicParsing="false" onAction="#showButtonOnClick" text="Show" />
    </children>
 </AnchorPane>
