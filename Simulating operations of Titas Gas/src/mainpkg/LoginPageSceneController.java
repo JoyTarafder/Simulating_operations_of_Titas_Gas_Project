@@ -15,6 +15,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -30,6 +31,8 @@ public class LoginPageSceneController implements Initializable {
     private TextField userNameTextField;
     @FXML
     private PasswordField passwordTextField;
+    @FXML
+    private CheckBox showPasswordCheckBox;
 
     /**
      * Initializes the controller class.
@@ -59,6 +62,14 @@ public class LoginPageSceneController implements Initializable {
         alert.setHeaderText(null);
         alert.setContentText(login_sccessful);
         alert.showAndWait();
+    }
+
+    @FXML
+    private void showPasswordCheckBoxOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void forgotPasswordLinkOnClick(ActionEvent event) {
     }
     
 }

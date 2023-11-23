@@ -8,6 +8,7 @@ package mainpkg;
  *
  * @author Asus
  */
-public class Employee {
+public class Customer {
     private String name;
+    private int id;
 }
