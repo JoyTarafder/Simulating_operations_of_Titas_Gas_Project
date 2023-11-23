@@ -28,18 +28,12 @@ import javafx.stage.Stage;
  */
 public class LoginPageSceneController implements Initializable {
 
-    @FXML
-    private TextField userNameTextField;
-    @FXML
-    private PasswordField passwordTextField;
-    @FXML
-    private CheckBox showPasswordCheckBox;
-    @FXML
-    private Button showbutton;
+    @FXML private TextField userNameTextField;
+    @FXML private PasswordField passwordTextField;
+    @FXML private CheckBox showPasswordCheckBox;
+    @FXML private TextField passwordTextField1;
 
-    /**
-     * Initializes the controller class.
-     */
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
 
@@ -81,31 +75,23 @@ public class LoginPageSceneController implements Initializable {
 //------------------------------------- Alert Code End ---------------------------------------------------------
     
     
-//--------------------------------Don't touch this code -------------------------------------------------
+//--------------------------------Show Password Code Start -------------------------------------------------
     @FXML
     private void showPasswordCheckBoxOnClick(ActionEvent event) {
-//        if (showPasswordCheckBox.isSelected()) {
-//            passwordTextField.setEchoChar((char)0); //password = JPasswordField
-//         } 
-//        else {
-//            passwordTextField.setEchoChar('*');
-//         }
+        if (showPasswordCheckBox.isSelected()) {
+            passwordTextField1.setText(passwordTextField.getText());
+            passwordTextField1.setVisible(true);
+            passwordTextField.setVisible(false);
+         } 
+        else {
+            passwordTextField.setText(passwordTextField.getText());
+            passwordTextField.setVisible(true);
+            passwordTextField1.setVisible(false);
+         }
     }
-
+//-------------------------------------- Show Password Code End ----------------------------------------------
     @FXML
     private void forgotPasswordLinkOnClick(ActionEvent event) {
     }
 
-    @FXML
-    private void showButtonOnClick(ActionEvent event) {
-//        if(showbutton.isSelected()){
-//            passwordTextField.setEchoChar((char)0); //By this line of code. We will actually see the actual characters
-//            showbutton.setText("Hide");
-//        }
-//        else{
-//            passwordTextField.setEchoChar('u25cf');
-//            showbutton.setText("Show");
-//        }
-    }
-//-------------------------------------------- x x x x x -----------------------------------------------------------------------------------------    
 }

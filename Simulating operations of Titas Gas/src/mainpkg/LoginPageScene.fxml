@@ -14,6 +14,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="657.0" prefWidth="751.0" style="-fx-background-color: #43A8F7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.LoginPageSceneController">
    <children>
+      <TextField fx:id="passwordTextField1" layoutX="428.0" layoutY="328.0" prefHeight="31.0" prefWidth="276.0" />
       <Label layoutX="424.0" layoutY="199.0" text="Username :">
          <font>
             <Font name="System Bold" size="23.0" />
@@ -25,7 +26,7 @@
          </font>
       </Label>
       <TextField fx:id="userNameTextField" layoutX="424.0" layoutY="246.0" prefHeight="31.0" prefWidth="276.0" promptText="Enter Your Username" />
-      <PasswordField fx:id="passwordTextField" layoutX="424.0" layoutY="328.0" prefHeight="31.0" prefWidth="276.0" promptText="Enter Your Password" />
+      <PasswordField fx:id="passwordTextField" layoutX="428.0" layoutY="328.0" prefHeight="31.0" prefWidth="276.0" promptText="Enter Your Password" />
       <Button layoutX="483.0" layoutY="430.0" mnemonicParsing="false" onAction="#logInButtonOnAction" prefHeight="44.0" prefWidth="137.0" style="-fx-background-color: #2918F5;" text="Log In" textFill="WHITE">
          <font>
             <Font name="System Bold" size="23.0" />
@@ -72,6 +73,5 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Label>
-      <Button fx:id="showbutton" layoutX="479.0" layoutY="367.0" mnemonicParsing="false" onAction="#showButtonOnClick" text="Show" />
    </children>
 </AnchorPane>
