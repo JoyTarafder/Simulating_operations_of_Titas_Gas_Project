@@ -90,8 +90,17 @@ public class LoginPageSceneController implements Initializable {
          }
     }
 //-------------------------------------- Show Password Code End ----------------------------------------------
+
+//---------------------------------------- Create New Account Code Start -------------------------------------------------------------
     @FXML
-    private void forgotPasswordLinkOnClick(ActionEvent event) {
+    private void createNewAccountButtonOnAction(ActionEvent event) throws IOException {
+        Parent CreateNewAccount = FXMLLoader.load(getClass().getResource("CreateAccount.fxml"));
+        Scene newScene = new Scene (CreateNewAccount);
+        Stage newStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        newStage.setScene(newScene);
+        newStage.show();
     }
+//---------------------------------------- Create New Account Code End -------------------------------------------------------------
+    
 
 }
