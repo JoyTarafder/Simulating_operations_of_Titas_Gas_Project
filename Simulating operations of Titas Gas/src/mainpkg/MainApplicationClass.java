@@ -22,6 +22,7 @@ public class MainApplicationClass extends Application {
         
         Scene scene = new Scene(root);
         
+        stage.setTitle("Titas Gas Login Page");
         stage.setScene(scene);
         stage.show();
     }

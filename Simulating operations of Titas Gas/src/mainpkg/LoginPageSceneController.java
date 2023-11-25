@@ -47,6 +47,7 @@ public class LoginPageSceneController implements Initializable {
             Parent CustomerDeshboard = FXMLLoader.load(getClass().getResource("CustomerDeshboard.fxml"));
             Scene newScene = new Scene (CustomerDeshboard);
             Stage newStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+            newStage.setTitle("Customer Deshboard");
             newStage.setScene(newScene);
             newStage.show();
         }
@@ -55,6 +56,7 @@ public class LoginPageSceneController implements Initializable {
             Parent FinancialManagerDeshboard = FXMLLoader.load(getClass().getResource("FinancialManagerDeshboard.fxml"));
             Scene newScene = new Scene (FinancialManagerDeshboard);
             Stage newStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+            newStage.setTitle("Financial Manager Deshboard");
             newStage.setScene(newScene);
             newStage.show();
         }
