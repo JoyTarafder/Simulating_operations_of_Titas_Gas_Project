@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
- */
+
 package mainpkg;
 
 import java.io.IOException;
@@ -24,7 +21,7 @@ import javafx.stage.Stage;
 /**
  * FXML Controller class
  *
- * @author Asus
+ * @author Joy Tarafder
  */
 public class LoginPageSceneController implements Initializable {
 
