@@ -1,11 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1">
-    
+
+<AnchorPane id="AnchorPane" prefHeight="653.0" prefWidth="809.0" style="-fx-background-color: #DCBFFF;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="mainpkg.FinancialManagerDeshboardController">
+   <children>
+      <ImageView fitHeight="111.0" fitWidth="105.0" layoutX="81.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="216.0" layoutY="85.0" text="তিতাস গ্যাস ট্রান্সমিসন এন্ড ডিষ্ট্রিবিউশন কোম্পানী লিমিটেড">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="97.0" layoutY="189.0" mnemonicParsing="false" onAction="#analyzingReportButtonOnAction" prefHeight="104.0" prefWidth="125.0" style="-fx-background-color: #9EB8D9;" text="Analyzing Report" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="256.0" layoutY="189.0" mnemonicParsing="false" onAction="#financialReportButtonOnAction" prefHeight="104.0" prefWidth="125.0" style="-fx-background-color: #D988B9;" text="Financial Report" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="97.0" layoutY="302.0" mnemonicParsing="false" onAction="#grossProfitReportButtonOnAction" prefHeight="104.0" prefWidth="125.0" style="-fx-background-color: #FF9B82;" text="Gross Profit Report" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="257.0" layoutY="311.0" mnemonicParsing="false" onAction="#trackingExpensesReportButtonOnAction" prefHeight="104.0" prefWidth="125.0" style="-fx-background-color: #FFECAF;" text="Tracking Expenses Report" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="92.0" layoutY="424.0" mnemonicParsing="false" onAction="#sendInvoiceCustomerButtonOnAction" prefHeight="68.0" prefWidth="135.0" style="-fx-background-color: #9EB8D9;" text="Send Invoice Customer" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="250.0" layoutY="439.0" mnemonicParsing="false" onAction="#yearlyBudgetRecordButtonOnAction" prefHeight="104.0" prefWidth="135.0" style="-fx-background-color: #D988B9;" text="Yearly Budget Record" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="92.0" layoutY="499.0" mnemonicParsing="false" onAction="#salaryDistributionButtonOnAction" prefHeight="68.0" prefWidth="135.0" style="-fx-background-color: #FF9B82;" text="Salary Distribution" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="405.0" layoutY="483.0" mnemonicParsing="false" onAction="#collaborationEmployeeMessageButtonOnAction" prefHeight="59.0" prefWidth="370.0" style="-fx-background-color: #DDF2FD;" text="Collaboration Employee Message" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="670.0" layoutY="584.0" mnemonicParsing="false" onAction="#signOutButtonOnAction" prefHeight="51.0" prefWidth="105.0" style="-fx-background-color: #7B66FF;" text="Sign Out" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="357.0" layoutY="610.0" text="© 2023 টিজিটিডিসিএল">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="51.0" fitWidth="52.0" layoutX="284.0" layoutY="597.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/fb.png" />
+         </image>
+      </ImageView>
+      <PieChart fx:id="pieChart" layoutX="466.0" layoutY="239.0" prefHeight="215.0" prefWidth="258.0" style="-fx-background-color: red;" />
+      <Label layoutX="570.0" layoutY="460.0" text="Pie Chart">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameTextField" layoutX="520.0" layoutY="162.0" text="Financial Manager">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="51.0" fitWidth="51.0" layoutX="715.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/people.png" />
+         </image>
+      </ImageView>
+   </children>
 </AnchorPane>
