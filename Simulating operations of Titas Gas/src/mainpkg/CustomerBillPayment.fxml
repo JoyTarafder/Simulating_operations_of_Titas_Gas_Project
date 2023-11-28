@@ -8,30 +8,29 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="461.0" prefWidth="575.0" style="-fx-background-color: #CCC8AA;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="mainpkg.CustomerBillPaymentController">
+<AnchorPane id="AnchorPane" prefHeight="461.0" prefWidth="575.0" style="-fx-background-color: #CCC8AA;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.CustomerBillPaymentController">
    <children>
-      <Button layoutX="221.0" layoutY="376.0" mnemonicParsing="false" onAction="#paymentButtonOnAction" prefHeight="44.0" prefWidth="112.0" style="-fx-background-color: #191717;" text="Payment" textFill="WHITE">
+      <Button layoutX="221.0" layoutY="361.0" mnemonicParsing="false" onAction="#paymentButtonOnAction" prefHeight="44.0" prefWidth="112.0" style="-fx-background-color: #191717;" text="Payment" textFill="WHITE">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Button>
-      <RadioButton fx:id="bankRadioButton" layoutX="234.0" layoutY="192.0" mnemonicParsing="false" text="Bank">
+      <RadioButton fx:id="bankRadioButton" layoutX="171.0" layoutY="203.0" mnemonicParsing="false" text="Bank">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="bkashRadioButton" layoutX="234.0" layoutY="235.0" mnemonicParsing="false" text="Bkash">
+      <RadioButton fx:id="bkashRadioButton" layoutX="173.0" layoutY="284.0" mnemonicParsing="false" text="Bkash">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="rocketRadioButton" layoutX="234.0" layoutY="275.0" mnemonicParsing="false" text="Rocket">
+      <RadioButton fx:id="rocketRadioButton" layoutX="443.0" layoutY="205.0" mnemonicParsing="false" text="Rocket">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="nagadRadioButton" layoutX="234.0" layoutY="314.0" mnemonicParsing="false" text="Nagad">
+      <RadioButton fx:id="nagadRadioButton" layoutX="444.0" layoutY="278.0" mnemonicParsing="false" text="Nagad">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
@@ -44,6 +43,31 @@
       <Label layoutX="145.0" layoutY="70.0" text="তিতাস গ্যাস ট্রান্সমিসন এন্ড ডিষ্ট্রিবিউশন কোম্পানী লিমিটেড">
          <font>
             <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="44.0" fitWidth="112.0" layoutX="299.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/rocket.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="123.0" layoutX="44.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/bank.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="75.0" fitWidth="110.0" layoutX="40.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/bksah.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="75.0" fitWidth="120.0" layoutX="298.0" layoutY="265.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/nagad.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="200.0" layoutY="432.0" text="© 2023 টিজিটিডিসিএল">
+         <font>
+            <Font name="System Bold" size="13.0" />
          </font>
       </Label>
    </children>

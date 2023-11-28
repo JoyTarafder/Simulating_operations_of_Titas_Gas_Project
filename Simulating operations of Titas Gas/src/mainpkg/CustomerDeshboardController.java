@@ -48,7 +48,7 @@ public class CustomerDeshboardController implements Initializable {
     private void billPaymentButtonOnAction(ActionEvent event) throws IOException {
         Parent BillPayment = FXMLLoader.load(getClass().getResource("CustomerBillPayment.fxml"));
         Scene newScene = new Scene (BillPayment);
-        Stage newStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        Stage newStage  = new Stage();
         newStage.setScene(newScene);
         newStage.show();
     }
