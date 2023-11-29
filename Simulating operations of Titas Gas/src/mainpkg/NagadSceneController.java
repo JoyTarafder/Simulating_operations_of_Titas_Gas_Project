@@ -15,7 +15,7 @@ import javafx.scene.control.TextField;
 /**
  * FXML Controller class
  *
- * @author Asus
+ * @author Joy Tarafder
  */
 public class NagadSceneController implements Initializable {
 

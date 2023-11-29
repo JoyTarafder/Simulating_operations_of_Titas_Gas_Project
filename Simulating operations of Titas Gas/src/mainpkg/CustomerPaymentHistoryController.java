@@ -21,7 +21,7 @@ import javafx.stage.Stage;
 /**
  * FXML Controller class
  *
- * @author Asus
+ * @author Joy Tarafder
  */
 public class CustomerPaymentHistoryController implements Initializable {
 
