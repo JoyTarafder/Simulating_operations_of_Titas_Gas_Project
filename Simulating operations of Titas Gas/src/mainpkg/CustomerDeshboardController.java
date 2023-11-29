@@ -14,6 +14,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
@@ -48,18 +49,18 @@ public class CustomerDeshboardController implements Initializable {
     private void billPaymentButtonOnAction(ActionEvent event) throws IOException {
         Parent BillPayment = FXMLLoader.load(getClass().getResource("CustomerBillPayment.fxml"));
         Scene newScene = new Scene (BillPayment);
-        Stage newStage  = new Stage();
-        newStage.setScene(newScene);
-        newStage.show();
+        Stage newWindow  = new Stage();
+        newWindow.setScene(newScene);
+        newWindow.show();
     }
 
     @FXML
     private void emergancyGasServiceButtonOnAction(ActionEvent event) throws IOException {
         Parent EmergancyGasService = FXMLLoader.load(getClass().getResource("CustomerEmergencyGasServices.fxml"));
         Scene newScene = new Scene (EmergancyGasService);
-        Stage newStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        newStage.setScene(newScene);
-        newStage.show();
+        Stage newWindow  = new Stage();
+        newWindow.setScene(newScene);
+        newWindow.show();
     }
 
     @FXML
@@ -75,18 +76,18 @@ public class CustomerDeshboardController implements Initializable {
     private void infoViewButtonOnAction(ActionEvent event) throws IOException {
         Parent AccountInformationView = FXMLLoader.load(getClass().getResource("CustomerInfoView.fxml"));
         Scene newScene = new Scene (AccountInformationView);
-        Stage newStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        newStage.setScene(newScene);
-        newStage.show();
+        Stage newWindow  = new Stage();
+        newWindow.setScene(newScene);
+        newWindow.show();
     }
 
     @FXML
     private void infoGasSafetyButtonOnAction(ActionEvent event) throws IOException {
         Parent InformationGasSafety = FXMLLoader.load(getClass().getResource("CustomerInfoGasSafety.fxml"));
         Scene newScene = new Scene (InformationGasSafety);
-        Stage newStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        newStage.setScene(newScene);
-        newStage.show();
+        Stage newWindow  = new Stage();
+        newWindow.setScene(newScene);
+        newWindow.show();
     }
 
     @FXML
@@ -106,7 +107,7 @@ public class CustomerDeshboardController implements Initializable {
         newStage.setScene(newScene);
         newStage.show();
     }
-
+//------------------------------------- Sidn Out Start ---------------------------------------------------------
     @FXML
     private void signOutButtonOnAction(ActionEvent event) throws IOException {
         Parent SignOut = FXMLLoader.load(getClass().getResource("LoginPageScene.fxml"));
@@ -115,6 +116,17 @@ public class CustomerDeshboardController implements Initializable {
         newStage.setScene(newScene);
         newStage.show();
     }
+//------------------------------------- Sidn Out End ---------------------------------------------------------
+
+//------------------------------------- Alert Code Start ---------------------------------------------------------
+    
+//    private void showAlert(String login_sccessful, Alert.AlertType alertType){
+//        Alert alert = new Alert(alertType);
+//        alert.setTitle("Login Result");
+//        alert.setContentText(login_sccessful);
+//        alert.showAndWait();
+//    }
+//------------------------------------- Alert Code End ---------------------------------------------------------
 
 
     
