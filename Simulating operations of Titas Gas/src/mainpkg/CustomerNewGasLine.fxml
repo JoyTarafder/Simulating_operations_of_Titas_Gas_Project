@@ -1,122 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="519.0" prefWidth="693.0" style="-fx-background-color: #A6CF98;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+<AnchorPane id="AnchorPane" prefHeight="641.0" prefWidth="693.0" style="-fx-background-color: #87C4FF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.CustomerNewGasLineController">
    <children>
-      <ImageView fitHeight="111.0" fitWidth="105.0" layoutX="27.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="111.0" fitWidth="105.0" layoutX="27.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/logo.png" />
          </image>
       </ImageView>
-      <Label layoutX="162.0" layoutY="85.0" text="তিতাস গ্যাস ট্রান্সমিসন এন্ড ডিষ্ট্রিবিউশন কোম্পানী লিমিটেড">
+      <Label layoutX="162.0" layoutY="60.0" text="তিতাস গ্যাস ট্রান্সমিসন এন্ড ডিষ্ট্রিবিউশন কোম্পানী লিমিটেড">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="275.0" layoutY="477.0" text="© 2023 টিজিটিডিসিএল">
+      <Label layoutX="272.0" layoutY="605.0" text="© 2023 টিজিটিডিসিএল">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <VBox alignment="TOP_CENTER" layoutX="51.0" layoutY="177.0" prefHeight="251.0" prefWidth="600.0" spacing="30.0">
-         <children>
-            <Label text="Detailed Customer View">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
-            <GridPane maxWidth="300.0" prefHeight="153.0" prefWidth="283.0">
-               <columnConstraints>
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-               </columnConstraints>
-               <rowConstraints>
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-               </rowConstraints>
-               <children>
-                  <Label text="First Name:">
-                     <font>
-                        <Font name="System Bold Italic" size="14.0" />
-                     </font>
-                  </Label>
-                  <Label text="Last Name:" GridPane.rowIndex="1">
-                     <font>
-                        <Font name="System Bold Italic" size="14.0" />
-                     </font>
-                  </Label>
-                  <Label text="Birthday:" GridPane.rowIndex="2">
-                     <font>
-                        <Font name="System Bold Italic" size="14.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="firstNameLabel" text="Label" GridPane.columnIndex="1">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="lastNameLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="birthdayLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                  </Label>
-                  <Label text="Age:" GridPane.rowIndex="3">
-                     <font>
-                        <Font name="System Bold Italic" size="14.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="ageLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="ageLabel1" layoutX="160.0" layoutY="134.0">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                  </Label>
-                  <Label text="Address" GridPane.rowIndex="4">
-                     <font>
-                        <Font name="System Bold Italic" size="14.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="addressLabel2" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="emailLabel2" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                  </Label>
-                  <Label text="Email" GridPane.rowIndex="5">
-                     <font>
-                        <Font name="System Bold Italic" size="14.0" />
-                     </font>
-                  </Label>
-               </children>
-            </GridPane>
-         </children>
-      </VBox>
+      <Label layoutX="55.0" layoutY="207.0" text="Fullname :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameTextField" layoutX="134.0" layoutY="202.0" promptText="Enter Your Full Name" />
+      <Label layoutX="45.0" layoutY="240.0" text="Phone No. :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="phoneNumberTextField" layoutX="134.0" layoutY="235.0" promptText="Enter Your Phone Number" />
+      <Label layoutX="78.0" layoutY="273.0" text="Email :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="emailTextField" layoutX="134.0" layoutY="270.0" promptText="Enter Your Email" />
+      <Label layoutX="59.0" layoutY="309.0" text="Address :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="addressTextField" layoutX="134.0" layoutY="304.0" prefHeight="57.0" prefWidth="187.0" promptText="Enter Your Address" />
+      <Label layoutX="385.0" layoutY="308.0" text="City :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cityTextField" layoutX="432.0" layoutY="304.0" promptText="Enter Your City" />
+      <Label layoutX="349.0" layoutY="344.0" text="Zip Code :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="zipCodeTextField" layoutX="432.0" layoutY="339.0" promptText="Enter Your Zip Code" />
+      <Label layoutX="48.0" layoutY="380.0" text="Are you the owner of the property where you want the gas line installed? ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="yesRadioButton" layoutX="59.0" layoutY="408.0" mnemonicParsing="false" text="Yes" />
+      <RadioButton fx:id="noRadioButton" layoutX="122.0" layoutY="408.0" mnemonicParsing="false" text="No" />
+      <ComboBox fx:id="gasLineTypeComboBox" layoutX="354.0" layoutY="202.0" prefHeight="31.0" prefWidth="180.0" promptText="Gas Line Type" />
+      <Label layoutX="354.0" layoutY="253.0" text="Date of installation:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datePicker" layoutX="508.0" layoutY="246.0" prefHeight="31.0" prefWidth="163.0" promptText="Enter Date" />
+      <Label layoutX="45.0" layoutY="437.0" text="Gas Line Approval :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="460.0" text="I have read and understand the safety information provided above.">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="482.0" text="I agree to all of the terms and conditions of this application.">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="213.0" layoutY="526.0" mnemonicParsing="false" onAction="#submitButtonOnAction" prefHeight="51.0" prefWidth="259.0" style="-fx-background-color: #363062;" text="Submit" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="186.0" layoutY="135.0" text="New Gas Line Application">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

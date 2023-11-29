@@ -40,9 +40,9 @@ public class CustomerDeshboardController implements Initializable {
     private void newGasLineButtonOnAction(ActionEvent event) throws IOException {
         Parent NewGasLine = FXMLLoader.load(getClass().getResource("CustomerNewGasLine.fxml"));
         Scene newScene = new Scene (NewGasLine);
-        Stage newStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        newStage.setScene(newScene);
-        newStage.show();
+        Stage newWindow  = new Stage();
+        newWindow.setScene(newScene);
+        newWindow.show();
     }
 
     @FXML
