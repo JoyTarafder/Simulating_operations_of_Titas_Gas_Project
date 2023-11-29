@@ -1,11 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1">
-    
+
+<AnchorPane id="AnchorPane" prefHeight="538.0" prefWidth="730.0" style="-fx-background-color: #BEADFA;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="mainpkg.CustomerPaymentHistoryController">
+   <children>
+      <ImageView fitHeight="111.0" fitWidth="105.0" layoutX="22.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="157.0" layoutY="79.0" text="তিতাস গ্যাস ট্রান্সমিসন এন্ড ডিষ্ট্রিবিউশন কোম্পানী লিমিটেড">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="84.0" layoutY="172.0" text="Payment History">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <TableView fx:id="paymentHistoryTableView" layoutX="84.0" layoutY="222.0" prefHeight="209.0" prefWidth="563.0">
+        <columns>
+          <TableColumn fx:id="dateTableView" prefWidth="181.0" text="Date" />
+          <TableColumn fx:id="amountTableView" prefWidth="381.0" text="Amount" />
+        </columns>
+      </TableView>
+      <Button layoutX="591.0" layoutY="464.0" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="51.0" prefWidth="105.0" style="-fx-background-color: #CDFAD5;" text="Back" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="279.0" layoutY="487.0" text="© 2023 টিজিটিডিসিএল">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="51.0" fitWidth="52.0" layoutX="206.0" layoutY="474.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/fb.png" />
+         </image>
+      </ImageView>
+   </children>
 </AnchorPane>
