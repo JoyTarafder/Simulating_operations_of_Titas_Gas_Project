@@ -4,8 +4,13 @@
  */
 package mainpkg;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -14,8 +19,11 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.PasswordField;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
+import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
@@ -31,28 +39,58 @@ public class CreateAccountController implements Initializable {
     @FXML
     private PasswordField passwordTextField;
     @FXML
-    private TextField userNameTextField1;
+    private DatePicker dobDatePicker;
     @FXML
-    private TextField userNameTextField11;
+    private RadioButton maleRadioButton;
     @FXML
-    private TextField userNameTextField111;
+    private RadioButton femaleRadioButton;
     @FXML
-    private PasswordField passwordTextField1;
+    private TextField fullnameTextField;
     @FXML
-    private TextField userNameTextField1111;
+    private TextField addressTextField;
     @FXML
-    private AnchorPane dobDatePicker;
-
-    /**
-     * Initializes the controller class.
-     */
+    private TextField phoneNoTextField;
+    @FXML
+    private PasswordField rePassowordTextField;
+    @FXML
+    private TextField emailTextField;
+    
+    private ArrayList<Customer> custList;
+    private ToggleGroup tg;
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        tg = new ToggleGroup();
+        maleRadioButton.setToggleGroup(tg);
+        femaleRadioButton.setToggleGroup(tg);
     }    
 
     @FXML
     private void createAccountButtonOnAction(ActionEvent event) {
+        Customer cust = new Customer(
+                userNameTextField.getText(),
+                fullnameTextField.getText(),
+                addressTextField.getText(),
+                emailTextField.getText(),
+                (maleRadioButton.isSelected() ? "Male" : "Female"),
+                passwordTextField.getText(),
+                dobDatePicker.getValue(),
+                Integer.parseInt(phoneNoTextField.getText())
+                
+        );
+        
+        custList.add(cust);
+        
+        try{
+                FileOutputStream fos = new FileOutputStream("customer.bin",true);
+                ObjectOutputStream oos = new ObjectOutputStream(fos);
+                for(Customer c: custList)
+                    oos.writeObject(c);
+                oos.close();
+            }
+            catch(Exception e){
+                //............
+            }
     }
 
     @FXML

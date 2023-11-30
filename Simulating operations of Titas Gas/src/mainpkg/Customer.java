@@ -1,24 +1,25 @@
 
 package mainpkg;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
 /**
  *
  * @author Joy Tarafder
  */
-public class Customer {
-    private String username,fullName,address,email,password,rePassword;
+public class Customer implements Serializable{
+    private String username,fullName,address,email,gender,password;
     private LocalDate dob;
     private int phoneNo;
 
-    public Customer(String username, String fullName, String address, String email, String password, String rePassword, LocalDate dob, int phoneNo) {
+    public Customer(String username, String fullName, String address, String email, String gender, String password, LocalDate dob, int phoneNo) {
         this.username = username;
         this.fullName = fullName;
         this.address = address;
         this.email = email;
+        this.gender = gender;
         this.password = password;
-        this.rePassword = rePassword;
         this.dob = dob;
         this.phoneNo = phoneNo;
     }
@@ -39,12 +40,12 @@ public class Customer {
         return email;
     }
 
-    public String getPassword() {
-        return password;
+    public String getGender() {
+        return gender;
     }
 
-    public String getRePassword() {
-        return rePassword;
+    public String getPassword() {
+        return password;
     }
 
     public LocalDate getDob() {
@@ -71,12 +72,12 @@ public class Customer {
         this.email = email;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 
-    public void setRePassword(String rePassword) {
-        this.rePassword = rePassword;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public void setDob(LocalDate dob) {
@@ -89,7 +90,8 @@ public class Customer {
 
     @Override
     public String toString() {
-        return "Customer{" + "username=" + username + ", fullName=" + fullName + ", address=" + address + ", email=" + email + ", password=" + password + ", rePassword=" + rePassword + ", dob=" + dob + ", phoneNo=" + phoneNo + '}';
+        return "Customer{" + "username=" + username + ", fullName=" + fullName + ", address=" + address + ", email=" + email + ", gender=" + gender + ", password=" + password + ", dob=" + dob + ", phoneNo=" + phoneNo + '}';
     }
 
+    
 }
