@@ -16,6 +16,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 /**
@@ -39,6 +40,8 @@ public class CreateAccountController implements Initializable {
     private PasswordField passwordTextField1;
     @FXML
     private TextField userNameTextField1111;
+    @FXML
+    private AnchorPane dobDatePicker;
 
     /**
      * Initializes the controller class.
