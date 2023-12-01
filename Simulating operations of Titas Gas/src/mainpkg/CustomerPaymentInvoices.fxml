@@ -1,11 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1">
-    
+
+<AnchorPane id="AnchorPane" prefHeight="514.0" prefWidth="667.0" style="-fx-background-color: #7ED7C1;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="mainpkg.CustomerPaymentInvoicesController">
+   <children>
+      <ImageView fitHeight="111.0" fitWidth="105.0" layoutX="13.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="148.0" layoutY="57.0" text="তিতাস গ্যাস ট্রান্সমিসন এন্ড ডিষ্ট্রিবিউশন কোম্পানী লিমিটেড">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="InvoiceTableView" layoutX="103.0" layoutY="184.0" prefHeight="177.0" prefWidth="488.0">
+        <columns>
+          <TableColumn fx:id="invoiceDate" prefWidth="205.0" text="Date" />
+          <TableColumn fx:id="amountInvoice" prefWidth="282.0" text="Amount" />
+        </columns>
+      </TableView>
+      <Button layoutX="528.0" layoutY="454.0" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="51.0" prefWidth="105.0" style="-fx-background-color: #7B66FF;" text="Back" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="262.0" layoutY="479.0" text="© 2023 টিজিটিডিসিএল">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="228.0" layoutY="385.0" mnemonicParsing="false" onAction="#downloadInvoiceButtonOnAction" prefHeight="51.0" prefWidth="271.0" style="-fx-background-color: #31304D;" text="Download Payment Invoice" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="227.0" layoutY="126.0" text="Payment Invoice">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>

@@ -10,12 +10,12 @@
 
 <AnchorPane id="AnchorPane" prefHeight="653.0" prefWidth="809.0" style="-fx-background-color: #DCBFFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.FinancialManagerDeshboardController">
    <children>
-      <ImageView fitHeight="111.0" fitWidth="105.0" layoutX="81.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="111.0" fitWidth="105.0" layoutX="55.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/logo.png" />
          </image>
       </ImageView>
-      <Label layoutX="216.0" layoutY="85.0" text="তিতাস গ্যাস ট্রান্সমিসন এন্ড ডিষ্ট্রিবিউশন কোম্পানী লিমিটেড">
+      <Label layoutX="190.0" layoutY="76.0" text="তিতাস গ্যাস ট্রান্সমিসন এন্ড ডিষ্ট্রিবিউশন কোম্পানী লিমিটেড">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
