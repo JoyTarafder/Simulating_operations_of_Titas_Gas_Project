@@ -48,7 +48,7 @@ public class FinancialManagerDeshboardController implements Initializable {
     private void financialReportButtonOnAction(ActionEvent event) throws IOException {
         Parent FinancialReport = FXMLLoader.load(getClass().getResource("FinancialManagerCreateFinancialReport.fxml"));
         Scene newScene = new Scene (FinancialReport);
-        Stage newWindow  = new Stage();;
+        Stage newWindow  = new Stage();
         newWindow.setScene(newScene);
         newWindow.show();
     }
@@ -93,9 +93,9 @@ public class FinancialManagerDeshboardController implements Initializable {
     private void salaryDistributionButtonOnAction(ActionEvent event) throws IOException {
         Parent SalaryDistribution = FXMLLoader.load(getClass().getResource("FinancialManagerSalaryDistribution.fxml"));
         Scene newScene = new Scene (SalaryDistribution);
-        Stage newStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        newStage.setScene(newScene);
-        newStage.show();
+        Stage newWindow  = new Stage();
+        newWindow.setScene(newScene);
+        newWindow.show();
     }
 
     @FXML
