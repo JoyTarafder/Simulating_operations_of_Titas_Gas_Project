@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="473.0" prefWidth="750.0" style="-fx-background-color: #B6BBC4;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="mainpkg.FinancialManagerCreateFinancialReportController">
+   <children>
+      <ImageView fitHeight="111.0" fitWidth="105.0" layoutX="38.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="164.0" layoutY="66.0" text="তিতাস গ্যাস ট্রান্সমিসন এন্ড ডিষ্ট্রিবিউশন কোম্পানী লিমিটেড">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="314.0" layoutY="426.0" text="© 2023 টিজিটিডিসিএল">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="253.0" layoutY="158.0" text="Today Total Sales Report :">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="amountTextField" layoutX="385.0" layoutY="231.0" prefHeight="35.0" prefWidth="203.0" promptText="Enter the Amount" />
+      <Label layoutX="237.0" layoutY="229.0" text="Amount :">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="237.0" layoutY="278.0" text="Date :">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="salesDatePicker" layoutX="386.0" layoutY="279.0" prefHeight="31.0" prefWidth="203.0" promptText="Enter Date" />
+      <Button layoutX="237.0" layoutY="334.0" mnemonicParsing="false" onAction="#submitButtonOnAction" prefHeight="51.0" prefWidth="355.0" style="-fx-background-color: #164863;" text="Submit" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

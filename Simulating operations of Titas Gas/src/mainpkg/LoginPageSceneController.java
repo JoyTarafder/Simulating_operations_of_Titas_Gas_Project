@@ -42,7 +42,7 @@ public class LoginPageSceneController implements Initializable {
         String username = userNameTextField.getText();
         String password = passwordTextField.getText();
         
-        if(username.equals("customer") && password.equals("password")){
+        if(username.equals("cu") && password.equals("p")){
             showAlert("Login Sccessfull!", Alert.AlertType.INFORMATION);
             Parent CustomerDeshboard = FXMLLoader.load(getClass().getResource("CustomerDeshboard.fxml"));
             Scene newScene = new Scene (CustomerDeshboard);
@@ -51,7 +51,7 @@ public class LoginPageSceneController implements Initializable {
             newStage.setScene(newScene);
             newStage.show();
         }
-        else if(username.equals("financialmanager") && password.equals("password")){
+        else if(username.equals("fm") && password.equals("p")){
             showAlert("Login Sccessfull!", Alert.AlertType.INFORMATION);
             Parent FinancialManagerDeshboard = FXMLLoader.load(getClass().getResource("FinancialManagerDeshboard.fxml"));
             Scene newScene = new Scene (FinancialManagerDeshboard);

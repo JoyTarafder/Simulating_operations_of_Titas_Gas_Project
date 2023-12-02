@@ -60,7 +60,7 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Button>
-      <Button layoutX="670.0" layoutY="584.0" mnemonicParsing="false" onAction="#signOutButtonOnAction" prefHeight="51.0" prefWidth="105.0" style="-fx-background-color: #7B66FF;" text="Sign Out" textAlignment="CENTER" wrapText="true">
+      <Button layoutX="672.0" layoutY="585.0" mnemonicParsing="false" onAction="#signOutButtonOnAction" prefHeight="51.0" prefWidth="105.0" style="-fx-background-color: #7B66FF;" text="Sign Out" textAlignment="CENTER" wrapText="true">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>

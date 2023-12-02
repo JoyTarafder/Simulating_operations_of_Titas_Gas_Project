@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
  */
-package mainpkg;
+package financialManager;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -15,14 +15,14 @@ import javafx.scene.control.TextField;
 /**
  * FXML Controller class
  *
- * @author Joy Tarafder
+ * @author Asus
  */
-public class BkashSceneController implements Initializable {
+public class FinancialManagerCreateFinancialReportController implements Initializable {
 
     @FXML
     private TextField amountTextField;
     @FXML
-    private DatePicker datePicker;
+    private DatePicker salesDatePicker;
 
     /**
      * Initializes the controller class.
@@ -33,7 +33,7 @@ public class BkashSceneController implements Initializable {
     }    
 
     @FXML
-    private void payButtonOnAction(ActionEvent event) {
+    private void submitButtonOnAction(ActionEvent event) {
     }
     
 }

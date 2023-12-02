@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
  */
-package mainpkg;
+package customer;
 
 import java.io.IOException;
 import java.net.URL;
@@ -23,14 +23,14 @@ import javafx.stage.Stage;
  *
  * @author Joy Tarafder
  */
-public class CustomerPaymentHistoryController implements Initializable {
+public class CustomerPaymentInvoicesController implements Initializable {
 
     @FXML
-    private TableView<?> paymentHistoryTableView;
+    private TableView<Customer> InvoiceTableView;
     @FXML
-    private TableColumn<?, ?> dateTableView;
+    private TableColumn<Customer, String> invoiceDate;
     @FXML
-    private TableColumn<?, ?> amountTableView;
+    private TableColumn<Customer, String> amountInvoice;
 
     /**
      * Initializes the controller class.
@@ -47,6 +47,10 @@ public class CustomerPaymentHistoryController implements Initializable {
         Stage newStage = (Stage)((Node)event.getSource()).getScene().getWindow();
         newStage.setScene(newScene);
         newStage.show();
+    }
+
+    @FXML
+    private void downloadInvoiceButtonOnAction(ActionEvent event) {
     }
     
 }

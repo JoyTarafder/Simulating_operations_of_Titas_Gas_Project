@@ -1,5 +1,5 @@
 
-package mainpkg;
+package financialManager;
 
 import java.io.IOException;
 import java.net.URL;
@@ -48,9 +48,9 @@ public class FinancialManagerDeshboardController implements Initializable {
     private void financialReportButtonOnAction(ActionEvent event) throws IOException {
         Parent FinancialReport = FXMLLoader.load(getClass().getResource("FinancialManagerCreateFinancialReport.fxml"));
         Scene newScene = new Scene (FinancialReport);
-        Stage newStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        newStage.setScene(newScene);
-        newStage.show();
+        Stage newWindow  = new Stage();;
+        newWindow.setScene(newScene);
+        newWindow.show();
     }
 
     @FXML

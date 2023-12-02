@@ -4,6 +4,7 @@
  */
 package mainpkg;
 
+import customer.Customer;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.FileWriter;

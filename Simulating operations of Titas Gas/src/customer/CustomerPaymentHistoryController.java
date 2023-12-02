@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
  */
-package mainpkg;
+package customer;
 
 import java.io.IOException;
 import java.net.URL;
@@ -14,7 +14,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.TextField;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.stage.Stage;
 
 /**
@@ -22,10 +23,14 @@ import javafx.stage.Stage;
  *
  * @author Joy Tarafder
  */
-public class CustomerCareServiceController implements Initializable {
+public class CustomerPaymentHistoryController implements Initializable {
 
     @FXML
-    private TextField coutomerTextField;
+    private TableView<?> paymentHistoryTableView;
+    @FXML
+    private TableColumn<?, ?> dateTableView;
+    @FXML
+    private TableColumn<?, ?> amountTableView;
 
     /**
      * Initializes the controller class.
@@ -42,10 +47,6 @@ public class CustomerCareServiceController implements Initializable {
         Stage newStage = (Stage)((Node)event.getSource()).getScene().getWindow();
         newStage.setScene(newScene);
         newStage.show();
-    }
-
-    @FXML
-    private void submitButtonOnAction(ActionEvent event) {
     }
     
 }
